@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ConfirmRemovalDialog.xaml" />
+    <None Remove="NewItemDialog.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Light.GuardClauses" Version="7.*" />
+    <PackageReference Include="Light.ViewModels" Version="0.*" />
+    <PackageReference Include="MahApps.Metro" Version="2.0.0-alpha0262" />
+    <PackageReference Include="MahApps.Metro.IconPacks" Version="3.0.0-alpha0146" />
+    <PackageReference Include="gong-wpf-dragdrop" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="ConfirmRemovalDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="NewItemDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>
